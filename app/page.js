@@ -20,10 +20,10 @@ export default function Home() {
       <section id = "slider" className="my-24">
         <SliderComponent/>
       </section>
-      <section id = "buttons">
+      <section id = "start-saving">
         <Buttons/>
       </section>
-      <section id = "text1">
+      <section id = "how-it-works">
         <Text1/>
       </section>
       <section id = "text2">
