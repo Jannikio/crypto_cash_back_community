@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Header() {
   return (
@@ -11,8 +12,9 @@ export default function Header() {
         <Link href="#start-saving" className="text-gray-500 font-bold">Start Saving</Link>
         <Link href="#how-it-works" className="text-gray-500 font-bold">How it Works</Link>
       </nav>
-      <div>
-        <span className="text-sm text-gray-400">Empowered by DefiChain</span>
+      <div className="flex items-center">
+        <Image src="/defichain.png" alt="logo" width={20} height={20}/>
+        <span className="text-sm text-gray-400 ml-2">Empowered by DefiChain</span>
       </div>
     </header>
   );
