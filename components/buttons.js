@@ -4,7 +4,7 @@ export default function Buttons() {
   return (
     <section className="p-6 bg-white text-gray-500">
       <div className="text-center mb-6">
-        <h2 className="text-2xl font-bold">🎉 Get 50% of your trading fees back 🎉</h2>
+        <h2 className="text-2xl font-bold">🎉 Get up to 50% of your trading fees back 🎉</h2>
         <p className="mt-2">Use one of our referral-codes below to get up to 50% of your trading fees back. We forward 100% of the collected trading fees back to you. Completely free 🙌</p>
       </div>
       

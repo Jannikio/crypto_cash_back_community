@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function TextFields() {
     return (
       <div className="flex items-center justify-center space-x-4">
@@ -25,9 +27,11 @@ export default function TextFields() {
         <div className="bg-purple-200 p-4 rounded-lg flex items-center h-full">
         <img src="/telegram-logo.png" alt="Telegram Logo" className="w-12 h-12 mr-2" />
         <div className="flex-grow">
-          <button className="bg-purple-200 p-4 rounded-lg">
-            <span className="text-2xl font-bold text-purple-800">Join our Telegram</span>
-          </button>
+          <Link href="https://t.me/+wsCXO1cIGG4xYWUy">
+            <button className="bg-purple-200 p-4 rounded-lg">
+              <span className="text-2xl font-bold text-purple-800">Join our Telegram</span>
+            </button>
+          </Link>
         </div>
       </div>
       </div>
