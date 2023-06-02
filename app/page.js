@@ -9,7 +9,7 @@ import SliderComponent from '../components/slider'
 
 export default function Home() {
   return (
-    <div className='bg-white'>
+    <div>
       <Header/>
       <section id = "video">
         <Video />
