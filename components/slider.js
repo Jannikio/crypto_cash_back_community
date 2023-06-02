@@ -40,18 +40,18 @@ export default function SliderComponent() {
   };
 
   return (
-    <div className="mt-8 mx-auto px-4 max-w-6xl">
+   <div className="mt-8 mx-auto px-4 max-w-6xl">
       <div className="text-center">
         <h2 className="text-5xl font-bold mb-4 text-gray-500">Calculate Your Savings on Trading Fees</h2>
       </div>
-  
+
       <div className="text-left text-lg mb-2 text-gray-500">
         Your Monthly Trading Volume in Thousands
       </div>
       <div className="text-left text-lg mb-2 text-gray-500">
         $ {sliderValue} k
       </div>
-  
+
       <Slider 
         className="mt-4"
         min={0} 
@@ -59,25 +59,25 @@ export default function SliderComponent() {
         marks={marks} 
         onChange={handleSliderChange} 
       />
-  
-      <div className="flex justify-between mt-8">
-        <div className="w-1/2 pr-2">
+
+      <div className="flex flex-col sm:flex-row justify-between mt-8">
+        <div className="flex-1 pr-2">
           <div className="bg-red-500 p-2 rounded-md">
             <label className="text-lg font-bold text-white block">Your Current Monthly Trading Fees:</label>
             <input
-              className="w-full text-left text-white font-bold bg-red-500 rounded-md text-lg"
+              className="w-full text-left text-white font-bold bg-red-500 rounded-md text-lg flex-grow"
               type="text"
               value={`$ ${fees}`}
               readOnly
             />
-          </div>
+          </div> 
         </div>
-  
-        <div className="w-1/2 pl-2">
+
+        <div className="flex-1 pl-2">
           <div className="bg-green-500 p-2 rounded-md">
             <label className="text-lg font-bold text-white block">Your Monthly Savings:</label>
             <input
-              className="w-full text-left text-white font-bold bg-green-500 rounded-md text-lg"
+              className="w-full text-left text-white font-bold bg-green-500 rounded-md text-lg flex-grow"
               type="text"
               value={`$ ${savings}`}
               readOnly
@@ -86,6 +86,8 @@ export default function SliderComponent() {
         </div>
       </div>
     </div>
+
+
   );
   
   
