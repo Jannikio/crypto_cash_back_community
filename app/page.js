@@ -24,7 +24,7 @@ export default function Home() {
         </div>
       </section>
       */}
-      <section id="slider" className="my-24">
+      <section id="slider" className="my-24 bg-gradient-to-b from-transparent via-gray-300 to-transparent">
         <div>
           <SliderComponent/>
         </div>

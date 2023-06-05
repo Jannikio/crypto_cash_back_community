@@ -4,13 +4,13 @@ import Slider from 'rc-slider';
 import 'rc-slider/assets/index.css';
 
 export default function SliderComponent() {
-  const [tradingAmount, setTradingAmount] = useState(0);
+  const [tradingAmount, setTradingAmount] = useState(300);
   const feePercentage = 2;
   const savingsPercentage = 0.5;
 
   const [fees, setFees] = useState(0);
   const [savings, setSavings] = useState(0);
-  const [sliderValue, setSliderValue] = useState(0);
+  const [sliderValue, setSliderValue] = useState(300);
 
   const handleSliderChange = value => {
     setSliderValue(value);
@@ -57,7 +57,8 @@ export default function SliderComponent() {
         min={0} 
         max={1000} 
         marks={marks} 
-        onChange={handleSliderChange} 
+        onChange={handleSliderChange}
+        defaultValue={300}
       />
 
       <div className="flex flex-col sm:flex-row justify-between mt-8">
