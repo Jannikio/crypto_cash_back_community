@@ -11,6 +11,7 @@ export default function Header() {
       <nav className="space-x-4 sm:space-x-10">
         <Link href="#start-saving" className="text-gray-500 font-bold">Start Saving</Link>
         <Link href="#how-it-works" className="text-gray-500 font-bold">How it Works</Link>
+        <a href="https://t.me/+wsCXO1cIGG4xYWUy" className="text-blue-500 font-bold" target="_blank" rel="noopener noreferrer">Join our Telegram</a>
       </nav>
       <div className="flex items-center">
         <Image src="/defichain.png" alt="logo" width={20} height={20}/>

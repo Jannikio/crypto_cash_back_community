@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div>
       <Header/>
-      <section id="video">
+      <section id="video" className="p-4 md:p-8">
         <Video />
       </section>
       <section id="start-saving" className="p-4 md:p-8">
