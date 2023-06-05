@@ -25,7 +25,7 @@ export default function Home() {
       </section>
       */}
       <section id="slider" className="my-24">
-        <div className="p-4 md:p-8">
+        <div>
           <SliderComponent/>
         </div>
       </section>
