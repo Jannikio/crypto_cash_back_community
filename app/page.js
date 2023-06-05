@@ -14,18 +14,20 @@ export default function Home() {
       <section id="video">
         <Video />
       </section>
+      <section id="start-saving" className="p-4 md:p-8">
+        <Buttons/>
+      </section>
+      {/* 
       <section id="textfields" className="my-10">
         <div className="p-4 md:p-8">
           <TextFields/>
         </div>
       </section>
+      */}
       <section id="slider" className="my-24">
         <div className="p-4 md:p-8">
           <SliderComponent/>
         </div>
-      </section>
-      <section id="start-saving" className="p-4 md:p-8">
-        <Buttons/>
       </section>
       <section id="how-it-works" className="p-4 md:p-8">
         <Text1/>
